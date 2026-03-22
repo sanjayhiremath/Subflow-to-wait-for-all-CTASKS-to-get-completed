@@ -20,6 +20,8 @@ accuracy and reliability.
 
 <img width="628" height="324" alt="image" src="https://github.com/user-attachments/assets/f35ef7e1-bcb8-47d6-a0da-7fe9a612fb4e" />
 
+7. Commit the attached update set and use this subflow in your main flow as applicable.
+
 Subflow Snapshot:
 
   <img width="375" height="379" alt="image" src="https://github.com/user-attachments/assets/84d5abeb-b620-4de6-84df-2d1d812ac854" />
