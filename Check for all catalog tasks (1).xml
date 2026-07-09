@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2025-08-19 12:52:20">
+<sys_hub_flow action="INSERT_OR_UPDATE">
+<access>public</access>
+<acls/>
+<active>true</active>
+<annotation/>
+<attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=1734827000,viewActivatedIn=naturalLanguage</attributes>
+<authored_on_release_version>26000</authored_on_release_version>
+<callable_by_client_api>false</callable_by_client_api>
+<category display_value=""/>
+<compiler_build>glide-xanadu-07-02-2024__patch9a-06-23-2025_07-23-2025_2226.zip</compiler_build>
+<copied_from/>
+<copied_from_name/>
+<description> Subflow to add to an existing flow to wait for all tasks to complete before closing the RITM.</description>
+<display_name_after_preview/>
+<flow_priority>MEDIUM</flow_priority>
+<generation_source/>
+<internal_name>wait_for_open_tasks</internal_name>
+<label_cache>[{"name":"subflow.ritm","label":"Input➛ritm","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","column_name":"","usedInstances":{"c4fa649d-bd50-493d-b596-d38a4af68c4a":["record"],"b3470c79-7c68-4bee-8634-fcdb9833b5e3":["conditions"],"38da3fe1-2f7b-41d7-bcfe-3e1fcf44e282":["conditions"],"70e8dec3-49c5-423c-a59e-461d6f66fe4c":["record"],"94fc5d25-7205-44c4-a0d1-a23c44a3cc98":["record"],"becb43ff-4954-4360-bcc6-924f602c88e3":["record"],"0aa055b8-cb64-41b2-9a53-cb45f2b476e5":["conditions"],"45888ac4-0a2d-4564-80a3-12896c1d9b6b":["conditions"]},"attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"561859b2-b76d-4206-a597-610d44f86800","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"8be87aaf-ab78-434d-8d98-3dc50c8e6fda.state","label":"6 - Wait For Condition➛State","reference_display":"State","type":"choice","base_type":"choice","choices":[{"label":"Complete","value":"0","order":0.0},{"label":"Timeout","value":"1","order":1.0}],"usedInstances":{},"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"2e334039-7a20-4ead-9148-909988f1a7e4"}},{"name":"flow_variable.state","label":"Flow Variables➛state","type":"string","base_type":"string","usedInstances":{"becb43ff-4954-4360-bcc6-924f602c88e3":["state"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"a402b7bc-f2cf-43e2-9a1a-5c3b62f0b285"}},{"name":"45888ac4-0a2d-4564-80a3-12896c1d9b6b.status","label":"2 - Look Up Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"usedInstances":{"59ac9ddd-d014-426f-9c6e-137d444daf52":["condition"]},"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"45888ac4-0a2d-4564-80a3-12896c1d9b6b.Record","label":"2 - Look Up Record➛Catalog Task Record","reference":"sc_task","reference_display":"Catalog Task","type":"reference","base_type":"reference","usedInstances":{"9ad826b8-729a-48ca-843b-d6da903aea6c":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+<latest_snapshot>1498ab8efb9f22102c8cf26165efdc3d</latest_snapshot>
+<master_snapshot>4580d07b3b7262d0dbaacaac24e45aec</master_snapshot>
+<master_snapshot_digest/>
+<name>Check all catalog tasks</name>
+<natlang/>
+<outputs/>
+<pre_compiled>false</pre_compiled>
+<remote_trigger_id/>
+<run_as>user</run_as>
+<run_with_roles/>
+<sc_callable>false</sc_callable>
+<show_draft_actions>false</show_draft_actions>
+<show_triggered_flows>false</show_triggered_flows>
+<status>published</status>
+<substatus/>
+<sys_class_name>sys_hub_flow</sys_class_name>
+<sys_created_by>pitsm_ssh77</sys_created_by>
+<sys_created_on>2025-07-24 06:21:59</sys_created_on>
+<sys_customer_update>false</sys_customer_update>
+<sys_domain>global</sys_domain>
+<sys_id>0e3e8cf33bbe22d0dbaacaac24e45ac6</sys_id>
+<sys_mod_count>40</sys_mod_count>
+<sys_name>Check all catalog tasks</sys_name>
+<sys_overrides display_value=""/>
+<sys_package display_value="Global" source="global">global</sys_package>
+<sys_policy/>
+<sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+<sys_scope display_value="Global">global</sys_scope>
+<sys_update_name>sys_hub_flow_0e3e8cf33bbe22d0dbaacaac24e45ac6</sys_update_name>
+<sys_updated_by>pitsm_ssh77</sys_updated_by>
+<sys_updated_on>2025-08-13 08:15:48</sys_updated_on>
+<type>subflow</type>
+<version>2</version>
+</sys_hub_flow>
+</unload>
